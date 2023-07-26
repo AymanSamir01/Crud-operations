@@ -1,0 +1,68 @@
+:root{
+    --placeholder-color:#cfcfcf;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+background-color: black;
+}
+h3 {
+    color: var(--placeholder-color);
+}
+::placeholder {
+    color: var(--placeholder-color) !important;
+    opacity: 1; 
+}  
+:-ms-input-placeholder {
+    color: var(--placeholder-color) !important;
+}  
+::-ms-input-placeholder {
+    color: var(--placeholder-color) !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* input[type=number] {
+    -moz-appearance: textfield;
+} */
+input, textarea {
+    border-color: rgba(13, 110, 253, 0.4) !important;
+}
+textarea {
+    resize: none;
+}
+table {
+    min-width: 600px;
+}
+.bgMark {
+    background-color: rgba(255, 251, 0, 0.5);
+}
+/* success popup  */
+div:where(.swal2-icon).swal2-success .swal2-success-ring {
+    border: 0.25em solid rgba(165,220,134,.4) !important;
+}
+/* wrong popup  */
+div:where(.swal2-container)
+div:where(.swal2-popup){
+    background: black !important;
+}
+.swal2-title{
+    color: white;
+}
+div:where(.swal2-icon).swal2-error {
+    border-color: #d12e2e !important;
+    color: #d12e2e !important;
+}
+div:where(.swal2-icon).swal2-error [class^=swal2-x-mark-line]{
+    background-color: #d12e2e !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+    background-color: #0072f5 !important;
+}
